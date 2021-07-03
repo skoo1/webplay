@@ -30,8 +30,6 @@
 				scene.background = new THREE.Color( 0x050505 );
 				scene.fog = new THREE.Fog( 0x050505, 2000, 3500 );
 
-				//
-
 				scene.add( new THREE.AmbientLight( 0x444444 ) );
 
 				const light1 = new THREE.DirectionalLight( 0xffffff, 0.5 );
@@ -41,8 +39,6 @@
 				const light2 = new THREE.DirectionalLight( 0xffffff, 1.5 );
 				light2.position.set( 0, - 1, 0 );
 				scene.add( light2 );
-
-				//
 
 				const triangles = 160000;
 
@@ -144,13 +140,13 @@
 				mesh = new THREE.Mesh( geometry, material );
 				scene.add( mesh );
 
-				//
-
 				renderer = new THREE.WebGLRenderer();
 				renderer.setPixelRatio( window.devicePixelRatio );
 				renderer.setSize( window.innerWidth, window.innerHeight );
 				renderer.outputEncoding = THREE.sRGBEncoding;
-
+				
+                                document.body.appendChild( renderer.domElement );
+				
 				window.addEventListener( 'resize', onWindowResize );
 
 			}
