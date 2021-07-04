@@ -29,12 +29,12 @@
 
 				const box_geometry = new THREE.BoxGeometry( 50, 50, 50 );
 				const box_material = new THREE.MeshBasicMaterial( { map: texture } );
-				box_mesh = new THREE.Mesh( geometry, material );
-				scene.add( mesh );
+				box_mesh = new THREE.Mesh( box_geometry, box_material );
+				scene.add( box_mesh );
 				
 				const plane_geometry = new THREE.PlaneGeometry( 200, 200 );
 				const plane_material = new THREE.MeshBasicMaterial( { map: texture } );
-				plane_mesh = new THREE.Mesh( geometry, material );
+				plane_mesh = new THREE.Mesh( plane_geometry, plane_material );
 				scene.add( plane_mesh );
 
 				renderer = new THREE.WebGLRenderer( { antialias: true } );
