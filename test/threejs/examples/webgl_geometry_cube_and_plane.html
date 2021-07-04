@@ -27,7 +27,7 @@
 
 				const texture = new THREE.TextureLoader().load( 'textures/crate.gif' );
 
-				const box_geometry = new THREE.BoxGeometry( 200, 200, 200 );
+				const box_geometry = new THREE.BoxGeometry( 50, 50, 50 );
 				const box_material = new THREE.MeshBasicMaterial( { map: texture } );
 				box_mesh = new THREE.Mesh( geometry, material );
 				scene.add( mesh );
