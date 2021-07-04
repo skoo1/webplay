@@ -1,6 +1,6 @@
 WEB3D
 =====
 
-A example from http://grubersjoe.github.io/web3d/
+An example from http://grubersjoe.github.io/web3d/
 
 ![Screenshot web3d](https://res.cloudinary.com/grubersjoe/image/upload/v1542626494/portfolio/web3d.jpg "Screenshot")
